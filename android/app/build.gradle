@@ -1,0 +1,57 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Flutter plugin
+    id 'com.google.gms.google-services'  // Apply the Google services plugin here
+}
+
+android {
+    namespace = "com.example.flutter_application_1"  // This should be correctly set
+    compileSdkVersion 34  // Set this explicitly or use `flutter.compileSdkVersion` if you're using the Flutter config
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+      sourceCompatibility JavaVersion.VERSION_17
+      targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    defaultConfig {
+        applicationId "com.example.flutter_application_1" // Make sure this matches your app's ID
+        minSdkVersion 23
+        targetSdkVersion 34
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core-ktx:1.10.1' // Optional: force versions if needed
+            force 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+        }
+    }
+}
+
+dependencies {
+    // Import the Firebase BoM (Bill of Materials) to manage versions for Firebase libraries
+    implementation platform('com.google.firebase:firebase-bom:33.8.0')  // Firebase BoM (use latest version)
+
+    // Firebase dependencies based on your needs
+    implementation 'com.google.firebase:firebase-auth'  // Firebase Authentication
+    implementation 'com.google.firebase:firebase-firestore'  // Firestore
+    implementation 'com.google.firebase:firebase-database'  // Realtime Database (if using)
+
+    // Optional: Add other Firebase dependencies as needed
+}
+
+// Apply the Google services plugin at the bottom
+apply plugin: 'com.google.gms.google-services'  // This is necessary to apply Firebase to the project
