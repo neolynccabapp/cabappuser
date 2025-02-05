@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyB4NTvKVBVwV2oh2xGhmmY2_61W4oyKmL4</string>
+	<string>AIzaSyA0eu53sfoxqcvu7okGn1uIYYyfk_npjVU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>769884037282</string>
+	<string>971675300018</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.flutterApplication1</string>
 	<key>PROJECT_ID</key>
-	<string>cab-app-neolync</string>
+	<string>neolync-cab-app</string>
 	<key>STORAGE_BUCKET</key>
-	<string>cab-app-neolync.firebasestorage.app</string>
+	<string>neolync-cab-app.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:769884037282:ios:33d8491822b952ac9677fb</string>
+	<string>1:971675300018:ios:3ede5d06bdc3073edf59ab</string>
 </dict>
 </plist>

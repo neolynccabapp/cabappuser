@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "769884037282",
-    "project_id": "cab-app-neolync",
-    "storage_bucket": "cab-app-neolync.firebasestorage.app"
+    "project_number": "971675300018",
+    "project_id": "neolync-cab-app",
+    "storage_bucket": "neolync-cab-app.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:769884037282:android:7aaf54d7ae20caf89677fb",
+        "mobilesdk_app_id": "1:971675300018:android:7c940edf85d6f341df59ab",
         "android_client_info": {
           "package_name": "com.example.flutter_application_1"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDY3SH4xvbkbb2vbvjhj-qrFzjspt5_5EM"
+          "current_key": "AIzaSyB9npCTMZOkiqHjKiuSy_EuyxnGYZgge_w"
         }
       ],
       "services": {
